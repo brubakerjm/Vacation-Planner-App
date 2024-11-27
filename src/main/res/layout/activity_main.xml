@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_screen_background"
+    tools:context=".UI.MainActivity">
+
+    <!-- TODO: Review font color / formatting / etc for clarity -->
+    <TextView
+        android:id="@+id/welcome_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_screen_welcome_text"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="1"
+        app:layout_constraintBottom_toTopOf="@+id/airplane"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/airplane"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:contentDescription="@string/airplane_content_description"
+        android:rotation="90"
+        android:src="@drawable/airplane"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/luggage"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/luggage"
+        android:contentDescription="@string/luggage_content_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/airplane"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/umbrella"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/umbrella"
+        android:contentDescription="@string/umbrella_content_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/airplane"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/enter_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/home_screen_button_text"
+        app:layout_constraintTop_toBottomOf="@id/airplane"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

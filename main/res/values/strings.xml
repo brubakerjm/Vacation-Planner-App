@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">D308 Vacation Planner</string>
+    <string name="home_screen_welcome_text">Welcome to Vacation Planner App!</string>
+    <string name="umbrella_content_description">icon of an umbrella</string>
+    <string name="luggage_content_description">icon of a luggage</string>
+    <string name="airplane_content_description">icon of an airplane</string>
+    <string name="home_screen_button_text">Enter</string>
+    <string name="vacation_details_title">Title:</string>
+    <string name="vacation_hotel">Hotel:</string>
+    <string name="vacation_title_input_hint"><font size="14">Enter the vacation name</font></string>
+    <string name="vacation_hotel_input_hint"><font size="14">Enter hotel name</font></string>
+    <string name="excursion_name_input_hint"><font size="14">Enter the name of the excursion</font></string>
+    <string name="excursion_name">Excursion Name:</string>
+    <string name="excursion_date_btn_text">Date</string>
+</resources>
